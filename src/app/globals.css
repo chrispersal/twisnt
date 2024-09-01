@@ -31,3 +31,20 @@ body {
     text-wrap: balance;
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap")
+  input[type= "text"] {
+  background-color: ##0f2d19;
+}
+
+.pageTitle {
+  color: #ffffff;
+  font-family: "Handjet", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  font-variation-settings: "ELGR" 1, "ELSH" 2;
+}
+
+footer.bottomText {
+  color: #3d3d3d;
+}

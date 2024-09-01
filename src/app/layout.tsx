@@ -1,4 +1,5 @@
 import { NoUser } from "@/components/NoUser.tsx";
+import { Logo } from "@/components/Logo.tsx";
 import {
   ClerkProvider,
   SignInButton,
@@ -14,11 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
+    <html lang="en">
+      <ClerkProvider>
+        <Logo />
         <body>
           <SignedOut>
-            <SignInButton />
             <NoUser />
           </SignedOut>
           <SignedIn>
@@ -26,7 +27,8 @@ export default function RootLayout({
             {children}
           </SignedIn>
         </body>
-      </html>
-    </ClerkProvider>
+        <footer className="bottomText">(C) Elon Hubbard 2024</footer>
+      </ClerkProvider>
+    </html>
   );
 }
